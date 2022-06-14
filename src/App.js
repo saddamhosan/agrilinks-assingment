@@ -1,10 +1,17 @@
-import Menu from "./Component/Menu";
+import { Route, Routes } from "react-router-dom";
+import Business from "./Component/Business";
+import Home from "./Component/Home";
+import Review from "./Component/Review";
 
 function App() {
   return (
     <div>
-      <Menu/>
-      <h1>hello</h1>
+      <Routes>
+        <Route path="/" element={<Home />} >
+          <Route path="/business" element={<Business/>}/>
+          <Route path="/review" element={<Review/>}/>
+        </Route>
+      </Routes>
     </div>
   );
 }
