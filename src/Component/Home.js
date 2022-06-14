@@ -12,8 +12,8 @@ const Home = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "border-b-4 w-full text-center border-green-700"
-                  : "w-full text-center"
+                  ? "border-b-4 w-full text-center font-bold border-[#01A39D]"
+                  : "w-full text-center font-bold"
               }
               to="/business"
             >
@@ -22,8 +22,8 @@ const Home = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "border-b-4 w-full text-center border-green-700"
-                  : "w-full text-center"
+                  ? "border-b-4 w-full text-center border-green-700 font-bold"
+                  : "w-full text-center font-bold"
               }
               to="/review"
             >

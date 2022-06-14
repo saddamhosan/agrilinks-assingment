@@ -24,7 +24,10 @@ const Business = () => {
     const {business } = details
     return (
       <div className="h-[60vh] overflow-y-scroll">
-        <h1 className="text-green-500 font-bold text-xl">{business?.userOption}</h1>
+        <h1 className="text-[#01A39D] font-bold text-xl mt-2">
+            
+          {business?.userOption}
+        </h1>
         <p className="py-4">
           Market Name
           <span className="font-bold ml-4">{business?.marketStdName}</span>
@@ -37,7 +40,7 @@ const Business = () => {
           Shop Number
           <span className="font-bold ml-4">{business?.mandiShopnum}</span>
         </p>
-        <p className="bg-slate-100 font-bold">Products</p>
+        <p className="bg-slate-100 font-bold p-2">Products</p>
         {details?.products?.map((product) => (
           <Product product={product} />
         ))}

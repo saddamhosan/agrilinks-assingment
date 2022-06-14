@@ -1,10 +1,16 @@
-import { IoLogoWhatsapp } from "react-icons/fa";
+
+import { IoLogoWhatsapp, IoMdCall, IoMdPersonAdd } from "react-icons/io";
 import me from '../Images/me.jpg';
 const Contact = () => {
     return (
       <div>
-        <div className='flex justify-end mt-2'>
-            <button className='btn btn-xs rounded-full'><span><IoLogoWhatsapp/></span> Share</button>
+        <div className="flex justify-end mt-2">
+          <button className="btn btn-xs rounded-full bg-[#01A39D] hover:bg-[#017c78] border-0 ">
+            <span>
+              <IoLogoWhatsapp />
+            </span>{" "}
+            Share
+          </button>
         </div>
         <div className="flex items-center space-x-4 my-4">
           <div class="avatar">
@@ -19,10 +25,16 @@ const Contact = () => {
               <i>Speaks English</i>
             </p>
             <div className="mt-3">
-              <button className="btn btn-sm bg-green-800 hover:bg-green-600 rounded-full mx-5">
+              <button className="btn btn-sm bg-[#01A39D] hover:bg-[#017c78] border-0 rounded-full mx-5">
+                <span className="mr-2">
+                  <IoMdPersonAdd />
+                </span>
                 Connect
               </button>
-              <button className="btn btn-sm btn-outline text-green-700 hover:bg-green-800 rounded-full mx-5">
+              <button className="btn btn-sm btn-outline text-[#01A39D] hover:bg-[#017c78] rounded-full mx-5">
+                <span className="mr-2">
+                  <IoMdCall />
+                </span>
                 Contact
               </button>
             </div>
