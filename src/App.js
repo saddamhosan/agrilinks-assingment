@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Business from "./Component/Business";
 import Home from "./Component/Home";
+import Report from "./Component/Report";
 import Review from "./Component/Review";
 
 export const DetailContext = createContext({});
@@ -23,6 +24,7 @@ function App() {
             <Route path="/business" element={<Business />} />
             <Route path="/review" element={<Review />} />
           </Route>
+            <Route path="/report/:id" element={<Report />} />
         </Routes>
       </DetailContext.Provider>
     </div>

@@ -1,9 +1,16 @@
 import { IoLogoWhatsapp, IoMdSend } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const Product = ({product}) => {
-    
+  const navigate=useNavigate()
+    const handleProductDetails=()=>{
+      navigate(`/report/${product.posts[0]._id}`);
+    }
     return (
-      <div className="shadow-md p-2 m-2 rounded-xl">
+      <div
+        onClick={handleProductDetails}
+        className="shadow-md p-2 m-2 rounded-xl"
+      >
         <div className="flex items-center space-x-8 ">
           <img
             className="h-[100px] w-[100px] border border-black"

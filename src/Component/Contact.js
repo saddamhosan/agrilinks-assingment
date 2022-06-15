@@ -6,7 +6,6 @@ import { DetailContext } from './../App';
 
 const Contact = () => {
   const details = useContext(DetailContext);
-  console.log(details.name, details.loclevel3Name, details.loclevel2Name);
   return (
     <div>
       <div className="flex justify-end mt-2">

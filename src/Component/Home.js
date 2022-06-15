@@ -8,7 +8,7 @@ const Home = () => {
       <div>
         <Menu />
         <div className="w-11/12 md:w-8/12 mx-auto">
-          <Contact/>
+          <Contact />
           <div className="flex justify-evenly">
             <NavLink
               className={({ isActive }) =>
@@ -37,9 +37,12 @@ const Home = () => {
           <div className="my-4 ">
             <p className="shadow-xl pl-4 w-[450px] mx-auto rounded-lg text-[#6702EE]">
               join the agricultural community
-              <span className="btn btn-md rounded-full bg-gradient-to-t from-[#a16cf7] to-[rgba(98,2,238,.5)] border-0">
+              <a
+                href="https://play.google.com/store/apps/details?id=net.gramoday.agriculture"
+                className="btn btn-md rounded-full bg-gradient-to-t from-[#a16cf7] to-[rgba(98,2,238,.5)] border-0"
+              >
                 Download gramodaya
-              </span>
+              </a>
             </p>
           </div>
         </div>
