@@ -1,7 +1,6 @@
 import { IoLogoWhatsapp, IoMdSend } from "react-icons/io";
 
 const Product = ({product}) => {
-    console.log(product);
     
     return (
       <div className="shadow-md p-2 m-2 rounded-xl">
